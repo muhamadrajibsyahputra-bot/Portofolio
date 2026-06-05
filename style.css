@@ -508,12 +508,11 @@ footer p{color:var(--gray-2);font-size:0.82rem;}
    RESPONSIVE
 ============================================ */
 @media(max-width:1024px){
-    .projects-grid{grid-template-columns:repeat(2,1fr);}
-    .skills-grid{grid-template-columns:repeat(2,1fr);}
-    .cert-grid{grid-template-columns:repeat(2,1fr);}
-    .home-menu{grid-template-columns:repeat(2,1fr);}
     .about-grid{grid-template-columns:1fr;}
-    .about-photo-wrap{display:none;}
+    .about-photo-wrap{
+        display:flex;
+        justify-content:center;
+    }
 }
 @media(max-width:900px){
     .hero{flex-direction:column-reverse;text-align:center;gap:40px;padding-top:20px;}
